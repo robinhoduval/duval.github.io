@@ -645,7 +645,7 @@ footer .footerContent ul li.social a {
 
 @media(min-width: 320px)and (max-width:640px) {
     .headerContent {
-        font-size:13px
+        font-size:15px
     }
 
     .headerContent .logo a div {
