@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Rubik:wght@400;500;600&display=swap');
+
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+
+
+.hero {
+    margin: 0 auto;
+    min-height: 90vh;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    align-items: center;
+    -webkit-justify-content: flex-start;
+    -moz-box-pack: start;
+    justify-content: flex-start;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    background-image: url(../css/nuevo\ 1236.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-top: -20px;
+    min-height: 860px;
+    height: 90%;
+    opacity: 100;
+
+}
+
+
+
+body,html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    background: #000000;
+    max-width: 100%;
+    overflow-x: hidden
+}
+
+
+body {
+
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+   
+form{
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 600px;
+}
+
+
+
+.input-group{
+display: flex;
+flex-direction: column;
+text-align: left;
+}
+
+h2{
+    color: #ff9d00;
+    font-size: 35px;
+}
+
+label{
+    color: #bababa;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-family: rubik;
+    font-weight: bold;
+}
+
+input, textarea{
+    padding: 17px 25px ;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    color: #283629;
+    outline: none;
+
+}
+
+input::placeholder, textarea::placeholder {
+    color: #767676;
+    font-family: rubik;
+    font-weight: 50;
+}  
+.form-txt{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+    .form-txt a{
+    color: #ff8000;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    }
+
+.bnt{
+    font-size: 16px;
+    color: #FFFFFF;
+border: 0;
+border-radius: 25px;
+background-color: #ff9d00;
+box-shadow: 0 0 20px rgba(255, 136, 0, 0.863) ;
+cursor: pointer;
+}
+
+
+.btn:hover {
+    background-color: #ff8c00;
+    }
+    @media (max-width:991px) {
+    body {
+    padding: 30px;
+    }
+    form {
+    padding: 50px 30px;
+    width: 100%;
+    }
+    input {
+    padding: 15px;
+    }
+    }
+
+
+
+
+
