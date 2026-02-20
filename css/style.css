@@ -8,7 +8,9 @@
 
 
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 body,html {
     padding: 0;
@@ -19,6 +21,7 @@ body,html {
     background: #000000;
     max-width: 100%;
     overflow-x: hidden
+  
 }
 
 body.loading {

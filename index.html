@@ -19,9 +19,10 @@
                         <div class="headerContent">
                 
                             <nav class="mainNav">
+                                <a href="#proyectos" data-path="/about" class="">Proyectos</a>
                                 <a href="Conocimientos/index.html" data-path="/playground" class="">Conocimientos</a>
                                 <a href="Servicios/servicio.html" data-path="/playground" class="">Servicios</a>
-                                <a href="#about" data-path="/about" class="">Contacto</a>
+                          
                             </nav>
                         </div>
                     </header>
@@ -40,7 +41,7 @@
 
                         <main style="background-color: rgb(0, 0, 0);" >
                             <div class="content-item work-item">
-                                <div class="work-item-title">Artes Publicitarios</div>
+                                <div  class="work-item-title">Artes Publicitarios</div>
                                 <div class="work-item-description">Artes recientemente realizados</div>
                                 <div class="full">
                                     <img  loading="lazy" width="100%" src="Portafolio incio/Artes publitarios/Banner Grande de inio4.jpg"/>
@@ -66,7 +67,7 @@
 
                                         
 
-                                        <div class="item">
+                                        <div id="proyectos" class="item">
                                             <div class="item-contenido">
                                                 <img loading="lazy"  src="Portafolio incio/Artes publitarios/Hamburguesa.jpg" alt="">
                                             </div>
@@ -106,7 +107,7 @@
 
 
 
-                                        <div class="grid">
+                                        <div  class="grid">
                                             <div class="card">
                                                 <img loading="lazy"  src="Portafolio incio/Artes publitarios/calendarios.jpg"/>
                                             </div>
@@ -383,7 +384,7 @@
    <!--===================== Realiad Aumentada =====================-->         
 
 
-   <div class="content-item work-item">
+   <div  class="content-item work-item">
     <div class="work-item-title">Realidad aumentada</div>
     <div class="work-item-description">Animación 3d App realidad aumentada.</div>
     <div class="full">
@@ -473,6 +474,44 @@
 
 <body>
 	
+
+
+<script>
+document.querySelector('a[href="#proyectos"]').addEventListener('click', function(e) {
+    e.preventDefault();
+
+    const target = document.querySelector('#proyectos');
+    const startPosition = window.pageYOffset;
+    const targetPosition = target.getBoundingClientRect().top;
+    const distance = targetPosition;
+    const duration = 1200; // 🔥 velocidad (en milisegundos)
+    let start = null;
+
+    function animation(currentTime) {
+        if (start === null) start = currentTime;
+        const timeElapsed = currentTime - start;
+        const run = ease(timeElapsed, startPosition, distance, duration);
+        window.scrollTo(0, run);
+        if (timeElapsed < duration) requestAnimationFrame(animation);
+    }
+
+    function ease(t, b, c, d) {
+        t /= d/2;
+        if (t < 1) return c/2*t*t + b;
+        t--;
+        return -c/2 * (t*(t-2) - 1) + b;
+    }
+
+    requestAnimationFrame(animation);
+});
+</script>
+
+
+
+
+
+
+
 
 
 
