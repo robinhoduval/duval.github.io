@@ -708,7 +708,7 @@ footer .footerContent ul li.social a {
     }
 
     .grid .card {
-        max-width: 50%
+        max-width: 100%
     }
 
     main {
@@ -1194,3 +1194,15 @@ button {
     transition: 100ms;
    }
 
+
+
+
+
+
+
+
+   .grid .card video {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
